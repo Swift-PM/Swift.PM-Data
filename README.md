@@ -1,2 +1,2 @@
 # Swift.PM-Data
-The list of packages displayed on Swift.PM
+This is a list of packages for the Swift.PM registry. This data is rendered by Swift.PM-Bot and posted to Swift.PM-Site.
