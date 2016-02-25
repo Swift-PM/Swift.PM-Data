@@ -14,7 +14,7 @@ struct PackageData: Equatable {
 	let shortDescription: String
 	let gitURL: String
 	let infoPageURL: String?
-	let tags: [Tag]
+	let tags: Set<Tag>
 }
 
 
@@ -39,7 +39,7 @@ let allPackages: [PackageData] = [
 		shortDescription: "Unification framework for logic programming",
 		gitURL: "https://github.com/JadenGeller/Axiomatic.git",
 		infoPageURL: nil,
-		tags: [.OSX, .iOS]
+		tags: [.OSX, .iOS, .tvOS, .watchOS, .Linux]
 	),
 
 	PackageData( 
@@ -97,21 +97,12 @@ let allPackages: [PackageData] = [
 	),
 
 	PackageData( 
-		name: "Parsley",
-		author: "Jaden Geller",
-		shortDescription: "Recursive descendent parser combinator.",
-		gitURL: "https://github.com/JadenGeller/Parsley.git",
-		infoPageURL: nil,
-		tags: [.OSX, .iOS, .tvOS, .watchOS]
-	),
-
-	PackageData( 
 		name: "Redbird",
 		author: "Honza Dvorsky",
 		shortDescription: "Pure-Swift implementation of a Redis client from the original protocol spec. OS X + Linux ready.",
 		gitURL: "https://github.com/czechboy0/Redbird.git",
 		infoPageURL: nil,
-		tags: []
+		tags: [.OSX, .iOS, .tvOS, .watchOS, .Linux]
 	),
 
 	PackageData( 
@@ -129,7 +120,7 @@ let allPackages: [PackageData] = [
 		shortDescription: "The Package Manager for the Swift Programming Language.",
 		gitURL: "https://github.com/apple/swift-package-manager.git",
 		infoPageURL: nil,
-		tags: [.iOS, .Linux]
+		tags: [.OSX, .Linux]
 	),
 
 	PackageData( 
